@@ -8,7 +8,7 @@ import { PokemonService } from './services/pokemon.service';
 import { PokemonSearchComponent } from './components/pokemon-search/pokemon-search.component';
 import { PokemonHomeLogoComponent } from './components/pokemon-home-logo/pokemon-home-logo.component';
 import { PokemonPokedexComponent } from './components/pokemon-pokedex/pokemon-pokedex.component';
-import { PokemonMonsWantedComponent } from './components/pokemon-mons-wanted/pokemon-mons-wanted.component';
+import { PokemonMonstWantedComponent } from './components/pokemon-monst-wanted/pokemon-monst-wanted.component';
 
 
 @NgModule({
@@ -18,7 +18,7 @@ import { PokemonMonsWantedComponent } from './components/pokemon-mons-wanted/pok
     PokemonSearchComponent,
     PokemonHomeLogoComponent,
     PokemonPokedexComponent,
-    PokemonMonsWantedComponent
+    PokemonMonstWantedComponent,
   ],
   imports: [
     BrowserModule,
