@@ -1,7 +1,12 @@
-<div class="pokemon-list">
-    <div class="pokemon" *ngFor="let pokemon of pokemons">
-      <img [src]="pokemon.imageUrl" alt="Imagem do Pokemon" />
-      <h3>{{ pokemon.name }}</h3>
-      <p>{{ pokemon.type }}</p>
-    </div>
+<!-- <div class="pokemon-list">
+  <div class="pokemon-item" *ngFor="let pokemon of pokemons" [class.selected]="pokemon === selectedPokemon" (click)="selectPokemon(pokemon)">
+    <img [src]="pokemon.image" alt="pokemon">
+    <span>{{ pokemon.name }}</span>
   </div>
+</div> -->
+
+<!-- <div class="pokemon-details" *ngIf="selectedPokemon">
+  <h2>{{ selectedPokemon.name }}</h2>
+  <p>{{ selectedPokemon.description }}</p>
+  Outras características do Pokémon 
+</div> -->

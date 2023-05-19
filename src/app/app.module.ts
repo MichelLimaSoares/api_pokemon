@@ -6,12 +6,17 @@ import { AppComponent } from './app.component';
 import { PokemonListComponent } from './components/pokemon-list/pokemon-list.component';
 import { PokemonService } from './services/pokemon.service';
 import { PokemonSearchComponent } from './components/pokemon-search/pokemon-search.component';
+import { PokemonHomeLogoComponent } from './components/pokemon-home-logo/pokemon-home-logo.component';
+import { PokemonPokedexComponent } from './components/pokemon-pokedex/pokemon-pokedex.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     PokemonListComponent,
-    PokemonSearchComponent
+    PokemonSearchComponent,
+    PokemonHomeLogoComponent,
+    PokemonPokedexComponent
   ],
   imports: [
     BrowserModule,

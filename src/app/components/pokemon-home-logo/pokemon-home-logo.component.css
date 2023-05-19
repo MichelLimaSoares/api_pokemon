@@ -1,0 +1,117 @@
+.conteiner-full-home-logo {
+    display: grid;
+    grid-template-columns: minmax(100px, 2fr) 2fr;
+    grid-template-rows: minmax(100px, 1fr);
+    /* grid-column-start: auto;  */
+    /* position: absolute; */
+    width: 1360px;
+    height: 493px;
+    left: 0px;
+    top: 0px;    
+}
+
+.container-left-in-up-home {
+    display: grid;            
+    grid-template-columns: minmax(100px, 1fr);
+    grid-template-rows: 1fr 1fr;    
+    /* grid-row-start: 200px;  */
+    /* grid-auto-rows: 200px;  */
+     
+}
+
+.logo-03 {
+    position: absolute;
+    left: 7.72%;
+    right: 84.19%;
+    top: 0.98%;
+    bottom: 90.59%;    
+} 
+
+.explore-pokemons {
+    position: absolute;
+    width: 450px;
+    height: 120px;
+    left: 109px;
+    top: 113px;
+
+    /* width: 90%;  Porcentagem ajustável para largura responsiva
+    height: auto;  Altura automática para se adaptar ao conteúdo 
+    left: 5%;  Porcentagem ajustável para posicionamento horizontal responsivo
+    top: 10px; Valor ajustável para posicionamento vertical responsivo */
+
+    /* font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 55px;
+    line-height: 60px; */
+}
+
+.Descubra-espécies-Pokémons {
+    position: absolute;
+    width: 560px;
+    height: 30px;
+    left: 109px;
+    top: 257px;
+
+    /* font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 30px; 
+    identical to box height, or 120%; 
+
+    color: #2F3E77; */
+}
+  
+.container-rigth-in-up-home {
+    display: grid;
+    grid-template-columns: minmax(100px, 2fr) 2fr;    
+    grid-row-gap: 1em;
+    
+       
+}
+
+/* .Rectangle {
+    position: absolute;
+    width: 1360px;
+    height: 493px;
+    left: 0px;
+    top: 0px;
+    background: linear-gradient(180deg, #EFF4FA 0%, rgba(239, 244, 250, 0) 102.84%);
+} */
+
+.vector-1 {
+    
+    /* grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3; */
+    
+
+    /* width: 156px;
+    height: 145px;
+    left: 35.55px;
+    top: 75.11px;         */
+}
+.vector-2 {
+    
+    /* grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3; */
+
+    /* width: 276px;
+    height: 264px;
+    left: 227.55px;
+    top: 20.11px; */
+}
+.vector-3 {
+    
+    /* width: 219px;
+    height: 208px;
+    left: 64.55px;
+    top: 256.11px;
+    background: #49D0B0;
+    opacity: 0.5;
+    box-shadow: 0px 15px 15px rgba(234, 104, 109, 0.1);         */
+}
