@@ -8,6 +8,7 @@ import { PokemonService } from './services/pokemon.service';
 import { PokemonSearchComponent } from './components/pokemon-search/pokemon-search.component';
 import { PokemonHomeLogoComponent } from './components/pokemon-home-logo/pokemon-home-logo.component';
 import { PokemonPokedexComponent } from './components/pokemon-pokedex/pokemon-pokedex.component';
+import { PokemonMonsWantedComponent } from './components/pokemon-mons-wanted/pokemon-mons-wanted.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { PokemonPokedexComponent } from './components/pokemon-pokedex/pokemon-po
     PokemonListComponent,
     PokemonSearchComponent,
     PokemonHomeLogoComponent,
-    PokemonPokedexComponent
+    PokemonPokedexComponent,
+    PokemonMonsWantedComponent
   ],
   imports: [
     BrowserModule,
