@@ -14,17 +14,14 @@ export class PokemonSearchComponent implements OnInit {
   constructor (private pokemonService: PokemonService) {}
 
   ngOnInit(): void {
-    this.pokemonService.getPokemons().subscribe(pokemons => {
-      this.pokemons = pokemons
-      console.log(pokemons)
-    })
+    
   }
 
   seachPokemon(): void {
-    // this.pokemonService.readPokemon().subscribe(pokemons => {
-    //   this.pokemons = pokemons
-    //   console.log(pokemons)
-
+    this.pokemonService.getPokemons().subscribe(pokemons => {
+      this.pokemons = pokemons
+      console.log(pokemons)      
+    })
   }
 
 

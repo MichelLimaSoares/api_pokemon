@@ -24,5 +24,7 @@
     Left: 61px;
     Radius: 2px;
     background-color: blue;
-    
+    display: flex;
+    flex-wrap: wrap;  
 }
+    

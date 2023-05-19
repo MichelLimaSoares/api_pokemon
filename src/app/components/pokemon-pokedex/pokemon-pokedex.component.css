@@ -1,4 +1,4 @@
-.title-section-pokedex {
+.title-section-pokedex {   
 
     width: 1238px;
     height: 30px;
@@ -17,12 +17,14 @@
 }
 
 .section-pokedex {
-
+    
     Width: 1360px;
     Height: 271px;
     Top: 587px;
     Left: 61px;
     Radius: 2px;
-    background-color: blue;
+    background-color: blue;    
+    display: flex;
+    flex-wrap: wrap;
      
 }
