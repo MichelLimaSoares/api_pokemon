@@ -1,31 +1,33 @@
 .conteiner-full-home-logo {
     display: grid;
     grid-template-columns: minmax(100px, 2fr) 2fr;
-    grid-template-rows: minmax(100px, 1fr);
-    /* grid-column-start: auto;  */
-    /* position: absolute; */
-    width: 1360px;
-    height: 493px;
+    grid-template-rows: minmax(100px, 1fr);    
+    height: 493px; 
     left: 0px;
-    top: 0px;    
+    top: 0px;
+
+    background: linear-gradient(180deg, #EFF4FA 0%, rgba(239, 244, 250, 0) 102.84%); 
 }
 
-.container-left-in-up-home {
-    display: grid;            
-    grid-template-columns: minmax(100px, 1fr);
-    grid-template-rows: 1fr 1fr;    
-    /* grid-row-start: 200px;  */
-    /* grid-auto-rows: 200px;  */
-     
+.up-logo-msgs-left{
+    
+    display: flex;
+
 }
 
-.logo-03 {
+.conteiner-vectors {
+    display: grid;
+    grid-template-columns: minmax(50px, 2fr) 2fr;
+    grid-template-rows: minmax(180px, 2fr)
+}
+
+.logo-inicie {
     position: absolute;
-    left: 7.72%;
-    right: 84.19%;
-    top: 0.98%;
-    bottom: 90.59%;    
-} 
+    Width: 110px;
+    Height: 138px;
+    Top: 16px;
+    Left: 105px;
+}
 
 .explore-pokemons {
     position: absolute;
@@ -34,16 +36,14 @@
     left: 109px;
     top: 113px;
 
-    /* width: 90%;  Porcentagem ajustável para largura responsiva
-    height: auto;  Altura automática para se adaptar ao conteúdo 
-    left: 5%;  Porcentagem ajustável para posicionamento horizontal responsivo
-    top: 10px; Valor ajustável para posicionamento vertical responsivo */
-
-    /* font-family: 'Nunito';
+    font-family: 'Nunito';
     font-style: normal;
     font-weight: 700;
     font-size: 55px;
-    line-height: 60px; */
+    line-height: 60px;
+    /* or 109%  */
+
+    color: #2F3E77;
 }
 
 .Descubra-espécies-Pokémons {
@@ -53,65 +53,183 @@
     left: 109px;
     top: 257px;
 
-    /* font-family: 'Nunito';
+    font-family: 'Nunito';
     font-style: normal;
     font-weight: 400;
     font-size: 25px;
-    line-height: 30px; 
-    identical to box height, or 120%; 
+    line-height: 30px;
+    /* identical to box height, or 120%  */
 
-    color: #2F3E77; */
-}
-  
-.container-rigth-in-up-home {
-    display: grid;
-    grid-template-columns: minmax(100px, 2fr) 2fr;    
-    grid-row-gap: 1em;
-    
-       
+    color: #2F3E77;
 }
 
-/* .Rectangle {
+.app-pokemon-search {
     position: absolute;
-    width: 1360px;
-    height: 493px;
-    left: 0px;
-    top: 0px;
-    background: linear-gradient(180deg, #EFF4FA 0%, rgba(239, 244, 250, 0) 102.84%);
-} */
+    width: 333px;
+    height: 44px;
+    left: 109px;
+    top: 318px;
+}
 
-.vector-1 {
-    
-    /* grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row-start: 1;
-    grid-row-end: 3; */
-    
-
-    /* width: 156px;
+.vector-1 {    
+    margin: 91px 430px 257px 774px;   
+    width: 156px;
     height: 145px;
-    left: 35.55px;
-    top: 75.11px;         */
-}
-.vector-2 {
-    
-    /* grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row-start: 1;
-    grid-row-end: 3; */
+    left: 0px;
+    top: 125.56px;
 
-    /* width: 276px;
-    height: 264px;
-    left: 227.55px;
-    top: 20.11px; */
+    background: #FAD373;
+    opacity: 0.5;
+    box-shadow: 0px 15px 15px rgba(234, 104, 109, 0.1);
+    transform: rotate(-25.39deg);
 }
-.vector-3 {
-    
-    /* width: 219px;
+
+.Vector-2 {  
+    margin: 36px 118px 193px 96px;  
+    width: 276px;
+    height: 264px;
+    left: 169.75px;
+    top: 90.98px;
+
+    background: #EA686D;
+    opacity: 0.5;
+    box-shadow: 0px 15px 15px rgba(234, 104, 109, 0.1);
+    transform: rotate(-19.25deg);
+}
+
+.vector-3 {  
+    margin: 272px 338px 13px 803px;
+    width: 219px;
     height: 208px;
     left: 64.55px;
     top: 256.11px;
+
     background: #49D0B0;
     opacity: 0.5;
-    box-shadow: 0px 15px 15px rgba(234, 104, 109, 0.1);         */
+    box-shadow: 0px 15px 15px rgba(234, 104, 109, 0.1);
+} 
+
+/* .conteiner-full-home-logo {
+    display: grid;
+    grid-template-columns: minmax(100px, 2fr) 2fr;
+    grid-template-rows: minmax(100px, 1fr);    
+    height: 100vh;
+    background: linear-gradient(180deg, #EFF4FA 0%, rgba(239, 244, 250, 0) 102.84%); 
 }
+
+.up-logo-msgs-left {
+    display: flex;
+}
+
+.conteiner-vectors {
+    display: grid;
+    grid-template-columns: minmax(50px, 2fr) 2fr;
+    grid-template-rows: minmax(50px, 1fr);
+}
+
+.logo-inicie {
+    position: absolute;
+    width: 15%;
+    height: auto;
+    top: 2%;
+    left: 5%;
+}
+
+.explore-pokemons {
+    position: absolute;
+    width: 60%;
+    height: auto;
+    top: 20%;
+    left: 10%;
+
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 5vw;
+    line-height: 1.1;
+
+    color: #2F3E77;
+}
+
+.Descubra-espécies-Pokémons {
+    position: absolute;
+    width: 70%;
+    height: auto;
+    top: 40%;
+    left: 10%;
+
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.5vw;
+    line-height: 1.2;
+
+    color: #2F3E77;
+}
+
+.app-pokemon-search {
+    position: absolute;
+    width: 50%;
+    height: auto;
+    top: 50%;
+    left: 10%;
+}
+
+.vector-1 {      
+    width: 30%;
+    height: fit-content;
+    left: 0;
+    top: 30%;
+
+    background: #FAD373;
+    opacity: 0.5;
+    box-shadow: 0px 15px 15px rgba(234, 104, 109, 0.1);
+    transform: rotate(-25.39deg);
+}
+
+.Vector-2 {    
+    width: 40%;
+    height: fit-content;
+    left: 50%;
+    top: 10%;
+
+    background: #EA686D;
+    opacity: 0.5;
+    box-shadow: 0px 15px 15px rgba(234, 104, 109, 0.1);
+    transform: rotate(-19.25deg);
+}
+
+.vector-3 {  
+    width: 35%;
+    height: fit-content;
+    left: 10%;
+    top: 60%;
+
+    background: #49D0B0;
+    opacity: 0.5;
+    box-shadow: 0px 15px 15px rgba(234, 104, 109, 0.1);
+}
+
+@media (max-width: 468px) {
+    .conteiner-full-home-logo {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        height: auto;
+    }
+
+    .up-logo-msgs-left {
+        flex-direction: column;
+    }
+
+    .logo-inicie,
+    .explore-pokemons,
+    .Descubra-espécies-Pokémons,
+    .app-pokemon-search,
+    .vector-1,
+    .Vector-2,
+    .vector-3 {
+        position: static;
+        width: auto;
+        height: auto;
+    }
+} */
