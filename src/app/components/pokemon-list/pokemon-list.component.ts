@@ -9,32 +9,13 @@ import { Pokemon } from 'src/app/models/pokemon-model';
 })
 export class PokemonListComponent implements OnInit {
   
-  pokemons!: any[];
+  public pokemons: Pokemon[] = []
 
   constructor(private pokemonService: PokemonService) { }
 
   ngOnInit() {
-    // this.getPokemons();
+    
   }
 
-  // getPokemons() {
-  //   this.pokemonService.getPokemons().subscribe(pokemons => {
-  //     this.pokemons = pokemons;
-  //   });
-  // }
-
-  // selectPokemon(pokemon: Pokemon) {
-  //   this.selectedPokemon = pokemon;
-  // }
-
-  // getPokemons() {
-  //   this.pokemonService.getPokemons().subscribe(
-  //     (response: any) => {
-  //       this.pokemons = response.results;
-  //     },
-  //     (error: any) => {
-  //       console.error(error);
-  //     }
-  //   );
-  // }
+    
 }

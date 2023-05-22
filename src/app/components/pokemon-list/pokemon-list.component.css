@@ -1,5 +1,6 @@
-.pokemonList {
+.pokemon-list-card {
   display: flex;
-  flex-wrap: wrap;  
+  flex-wrap: wrap;
+  place-content: space-evenly;  
 }
-  
+

@@ -1,5 +1,6 @@
 .title-section-pokedex {   
-
+    display: flex;
+    flex-wrap: wrap;
     width: 1238px;
     height: 30px;
     left: 61px;
@@ -12,19 +13,13 @@
     line-height: 30px;
     /* identical to box height, or 100% */
 
-    color: #2F3E77;
+    color: #8393d3;
 
 }
 
 .section-pokedex {
-    
-    Width: 1360px;
-    Height: 271px;
-    Top: 587px;
-    Left: 61px;
-    Radius: 2px;
-    background-color: blue;    
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap;    
+    background-color: #b0b0ef;   
      
 }
