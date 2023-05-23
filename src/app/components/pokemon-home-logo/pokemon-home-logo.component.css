@@ -73,10 +73,10 @@
 
 .vector-1 {    
     margin: 91px 430px 257px 774px;   
-    width: 156px;
+    /* width: 156px;
     height: 145px;
     left: 0px;
-    top: 125.56px;
+    top: 125.56px; */
 
     background: #FAD373;
     opacity: 0.5;
@@ -86,10 +86,10 @@
 
 .Vector-2 {  
     margin: 36px 118px 193px 96px;  
-    width: 276px;
+    /* width: 276px;
     height: 264px;
     left: 169.75px;
-    top: 90.98px;
+    top: 90.98px; */
 
     background: #EA686D;
     opacity: 0.5;
@@ -99,10 +99,10 @@
 
 .vector-3 {  
     margin: 272px 338px 13px 803px;
-    width: 219px;
+    /* width: 219px;
     height: 208px;
     left: 64.55px;
-    top: 256.11px;
+    top: 256.11px; */
 
     background: #49D0B0;
     opacity: 0.5;
