@@ -1,6 +1,8 @@
+
 import { Pokemon } from 'src/app/models/pokemon-model';
 import { PokemonService } from './../../services/pokemon.service';
 import { Component, OnInit } from '@angular/core';
+import { PokemonsMaisProcurados } from 'src/app/models/pokemon-mais-procurados';
 
 @Component({
   selector: 'app-pokemon-search',
@@ -24,5 +26,11 @@ export class PokemonSearchComponent implements OnInit {
     })
   }
 
+  pokemonsProcurados(): void {
+    this.pokemonService.readPokemon().subscribe(pokemonMaisProcurados => {
+      pokemonMaisProcurados = pokemonMaisProcurados
+    })
+
+  }
 
 }

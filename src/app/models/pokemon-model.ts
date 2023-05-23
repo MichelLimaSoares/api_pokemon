@@ -14,7 +14,5 @@ export interface Pokemon {
      descricao: string
   }
 
-  export interface PokemonsMaisProcurados {
-    name: string
-    url: string
-  }
+
+    

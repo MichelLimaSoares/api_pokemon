@@ -7,15 +7,21 @@ import { Pokemon } from 'src/app/models/pokemon-model';
   templateUrl: './pokemon-list.component.html',
   styleUrls: ['./pokemon-list.component.css']
 })
-export class PokemonListComponent implements OnInit {
+export class PokemonListComponent {
   
-  public pokemons: Pokemon[] = []
+  pokemons = [
+    'Bulbasaur',
+    'Iyvisour'
+  ];
 
-  constructor(private pokemonService: PokemonService) { }
+  // implements OnInit
 
-  ngOnInit() {
+  // public pokemons: Pokemon[] = []
+
+  // constructor(private pokemonService: PokemonService) { }
+
+  // ngOnInit() {
     
-  }
-
-    
+  // }
+  
 }
