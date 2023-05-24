@@ -8,7 +8,7 @@ import { Component, Input } from '@angular/core';
 export class PokemonCardComponent {
 
   @Input()
-  pokemon: string | undefined;
+  pokemon!: string;
   
   @Input()
   numero!: number;

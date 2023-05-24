@@ -11,7 +11,8 @@ export class PokemonListComponent {
   
   pokemons = [
     'Bulbasaur',
-    'Iyvisour'
+    'Iyvisour',
+    'Venosaur'
   ];
 
   // implements OnInit
