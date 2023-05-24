@@ -26,11 +26,11 @@ export class PokemonSearchComponent implements OnInit {
     })
   }
 
-  pokemonsProcurados(): void {
-    this.pokemonService.readPokemon().subscribe(pokemonMaisProcurados => {
-      pokemonMaisProcurados = pokemonMaisProcurados
-    })
+  // pokemonsProcurados(): void {
+  //   this.pokemonService.readPokemon().subscribe(pokemonMaisProcurados => {
+  //     pokemonMaisProcurados = pokemonMaisProcurados
+  //   })
 
-  }
+  // }
 
 }

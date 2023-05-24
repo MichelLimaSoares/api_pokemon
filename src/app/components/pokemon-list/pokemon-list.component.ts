@@ -1,25 +1,23 @@
-import { Component, OnInit } from '@angular/core';
+import { Component} from '@angular/core';
 import { PokemonService } from '../../services/pokemon.service';
-import { Pokemon } from 'src/app/models/pokemon-model';
 
 @Component({
   selector: 'app-pokemon-list',
   templateUrl: './pokemon-list.component.html',
   styleUrls: ['./pokemon-list.component.css']
 })
+
 export class PokemonListComponent {
   
-  pokemons = [
-    'Bulbasaur',
-    'Iyvisour',
-    'Venosaur'
-  ];
+  
+
+  constructor(public pokemonService: PokemonService) { }
 
   // implements OnInit
 
-  // public pokemons: Pokemon[] = []
+  //public pokemons: Pokemon[] = []
 
-  // constructor(private pokemonService: PokemonService) { }
+  
 
   // ngOnInit() {
     

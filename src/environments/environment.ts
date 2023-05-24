@@ -6,7 +6,7 @@ export const pokedexAPI = {
 
   export const pokemonAPI = {
     production: false,
-    apiUrl: 'https://pokeapi.co/api/v2/pokemon/',
+    apiUrl: 'https://pokeapi.co/api/v2/pokemon',
     apiKey: 'urlPokemonAPI'
   };
   

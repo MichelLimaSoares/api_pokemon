@@ -20,6 +20,5 @@
 .section-pokedex {
     display: flex;
     flex-wrap: wrap;    
-    background-color: #b0b0ef;   
-     
+   
 }
