@@ -3,7 +3,8 @@ import { HttpClient } from '@angular/common/http';
 import { Pokemon } from '../models/pokemon-model';
 import { Observable } from 'rxjs';
 import { pokemonAPI } from 'src/environments/environment';
-import { PokemonsMaisProcurados } from '../models/pokemon-mais-procurados';
+import { PokedexList } from '../models/pokedex-list-model';
+import { pokemonImg } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
@@ -12,11 +13,11 @@ import { PokemonsMaisProcurados } from '../models/pokemon-mais-procurados';
 
 export class PokemonService {
 
-  pokemons: PokemonsMaisProcurados[] =  [];
+  pokemons: PokedexList [] =  [];
   
   // pokemonAPI esta trazendo de environment.ts a url
   public apiUrl = pokemonAPI.apiUrl;
-  //private apiUrlImg = pokedexAPI.apiUrl;
+  public pokeImg = pokemonImg.apiUrl;
 
   constructor(private http: HttpClient) { 
     this.loadPokemon();

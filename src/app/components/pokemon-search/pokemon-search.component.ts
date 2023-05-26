@@ -1,8 +1,8 @@
-
 import { Pokemon } from 'src/app/models/pokemon-model';
 import { PokemonService } from './../../services/pokemon.service';
 import { Component, OnInit } from '@angular/core';
-import { PokemonsMaisProcurados } from 'src/app/models/pokemon-mais-procurados';
+import { PokemonCardComponent } from '../pokemon-card/pokemon-card.component';
+
 
 @Component({
   selector: 'app-pokemon-search',
@@ -10,6 +10,10 @@ import { PokemonsMaisProcurados } from 'src/app/models/pokemon-mais-procurados';
   styleUrls: ['./pokemon-search.component.css']
 })
 export class PokemonSearchComponent implements OnInit {
+
+  readSkills = PokemonCardComponent  
+
+
 
   pokemons: Pokemon[] = [];
 
@@ -19,12 +23,12 @@ export class PokemonSearchComponent implements OnInit {
     
   }
 
-  seachPokemon(): void {
-    this.pokemonService.getPokemons().subscribe(pokemons => {
-      this.pokemons = pokemons
-      console.log(pokemons)      
-    })
-  }
+  getSkills() {
+
+    return this.readSkills
+
+  
+ }
 
   // pokemonsProcurados(): void {
   //   this.pokemonService.readPokemon().subscribe(pokemonMaisProcurados => {

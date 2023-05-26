@@ -1,12 +1,18 @@
-export const pokedexAPI = {
+export const pokemonImg = {
     production: false,
-    apiUrl: 'https://www.pokemon.com/br/pokedex/',
-    apiKey: 'urlPokedex'
+    apiUrl: 'https://assets.pokemon.com/assets/cms2/img/pokedex/detail/',
+    apiKey: 'urlImgPokemon'
   };
 
   export const pokemonAPI = {
     production: false,
-    apiUrl: 'https://pokeapi.co/api/v2/pokemon',
+    apiUrl: 'https://pokeapi.co/api/v2/pokemon/',
     apiKey: 'urlPokemonAPI'
   };
   
+  export const pokemonAttribute = {
+    product: false,
+    apiUrl: 'https://pokeapi.co/api/v2/pokemon/pokemon/ditto',
+    apiKey: 'propertyAPI'
+
+  }
