@@ -12,7 +12,9 @@ export const pokemonImg = {
   
   export const pokemonAttribute = {
     product: false,
-    apiUrl: 'https://pokeapi.co/api/v2/pokemon/pokemon/ditto',
+    apiUrl: 'https://pokeapi.co/api/v2/pokemon/ditto/',
     apiKey: 'propertyAPI'
 
   }
+
+  

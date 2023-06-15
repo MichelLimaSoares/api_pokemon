@@ -1,10 +1,10 @@
+import { Pokemon } from 'src/app/models/pokemon-model';
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Pokemon } from '../models/pokemon-model';
-import { Observable } from 'rxjs';
-import { pokemonAPI } from 'src/environments/environment';
+import { Observable, from, map, of } from 'rxjs';
+import { pokemonAPI, pokemonAttribute, pokemonImg } from 'src/environments/environment';
 import { PokedexList } from '../models/pokedex-list-model';
-import { pokemonImg } from 'src/environments/environment';
+
 
 @Injectable({
   providedIn: 'root'
@@ -14,34 +14,53 @@ import { pokemonImg } from 'src/environments/environment';
 export class PokemonService {
 
   pokemons: PokedexList [] =  [];
+  pokemon: Pokemon [] = []; 
   
-  // pokemonAPI esta trazendo de environment.ts a url
+  // Buscando urls no environment.ts
   public apiUrl = pokemonAPI.apiUrl;
   public pokeImg = pokemonImg.apiUrl;
+  public pokeSkill = pokemonAttribute.apiUrl;
 
   constructor(private http: HttpClient) { 
     this.loadPokemon();
   }
 
   // Carregar lista de pokemons da APIPokemons
-  async loadPokemon() {
-    const requisicao = await this.http.get<any>(this.apiUrl).toPromise();
+   async loadPokemon() {
+     const requisicao = await this.http.get<any>(this.apiUrl).toPromise();
     
-    this.pokemons = requisicao.results;
-    console.log(this.pokemons);
-  }
+     this.pokemons = requisicao.results;
+     console.log(this.pokemons);
+   }
 
-  getPokemons(): Observable<Pokemon[]> {
-    return this.http.get<any[]>(this.apiUrl)
-  }
+  // loadPokemons(): Observable<PokedexList[]> {
+  //   return from(this.http.get<any>(this.apiUrl).toPromise())
+  //     .pipe(
+  //       map((requisicao: any) => requisicao.results)
+  //     );
+  // }
 
-  // readPokemon(): Observable<PokemonsMaisProcurados[]> {
-  //   return this.http.get<PokemonsMaisProcurados[]> (this.apiUrl)
+  // readSkillsPokemons(): Observable<Pokemon> {
+  //   return this.http.get<Pokemon>(this.pokeSkill)
+  // }
+
+  // loadSkillsPokemon(): Observable<string> {    
+  //   const loadSkills = this.pokeSkill
+  //   return of(loadSkills)
+
+  
+  // this.loadSkillsPokemon();
+  // }
+
+
+  // getPokemons(): Observable<Pokemon[]> {
+  //   return this.http.get<any[]>(this.apiUrl)
   // }
 
   // getPokemonImg(): Observable<PokemonsMaisProcurados[]> {
   //   return  this.http.get<PokemonsMaisProcurados[]> (this.apiUrlImg)
   // }
+
 }
 
 //export default PokemonService;

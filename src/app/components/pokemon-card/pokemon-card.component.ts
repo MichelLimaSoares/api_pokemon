@@ -1,5 +1,9 @@
-import { Attribute, Component, Input } from '@angular/core';
+import { PokemonService } from './../../pokemon.service';
+import { Component, Input } from '@angular/core';
+import { Observable, of } from 'rxjs';
+import { Pokemon } from 'src/app/models/pokemon-model';
 import { pokemonAttribute, pokemonImg } from 'src/environments/environment';
+
 
 @Component({
   selector: 'app-pokemon-card',
@@ -18,6 +22,11 @@ export class PokemonCardComponent {
   @Input()
   numero!: number;
 
+  constructor (private pokemonService: PokemonService) {
+
+  }
+
+  
   // Função para pegar imagens dos pokemons, com base na API pokedex
   pegarImagePokemon() {
 
@@ -25,6 +34,7 @@ export class PokemonCardComponent {
     return this.pokeImg+numeroFormatado+'.png';
 
   }
+
 
   // Função que coloca ZEROS na frente de acordo com a quantidade necessaria
   leadingZero (str: string | number, size = 3): string {
@@ -39,7 +49,7 @@ export class PokemonCardComponent {
 
   // Function, get attibutes and skills pokemons
   readSkills () {
-    return Attribute;
+    return this.attribute;
   }
 
 }

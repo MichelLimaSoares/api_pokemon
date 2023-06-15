@@ -1,5 +1,5 @@
 export interface Pokemon {
-    results: []
+    
      codigo: string
      nome: string
      tipo: string
